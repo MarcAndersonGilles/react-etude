@@ -1,6 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 
 
@@ -24,6 +25,7 @@ class App extends React.Component{
 render() {
   return (
     <div className="App">
+      <Navbar />
       <h1>Mon premier projet avec React</h1>
       <p>{this.state.apiResponse}</p>
     </div>
