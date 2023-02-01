@@ -41,11 +41,4 @@
   .navbar__list {
     flex-direction: row;
   }
-  .navbar__burger {
-    display: block;
-    cursor: pointer;
-  }
-  .navbar__list--open {
-    display: flex;
-  }
 }/*# sourceMappingURL=navbar.css.map */

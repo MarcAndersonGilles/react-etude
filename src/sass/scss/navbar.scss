@@ -38,16 +38,17 @@
 
 @media screen and (min-width:769px) {
 
-    .navbar__list {//display none pour menu burger
+    .navbar__list {
+        
         flex-direction: row;
     }
-    .navbar__burger {
-        display: block;
-        cursor: pointer;
-      }
-      .navbar__list--open {
-        display: flex;
-      }
+    // .navbar__burger {
+    //     display: block;
+    //     cursor: pointer;
+    //   }
+    //   .navbar__list--open {
+    //     display: flex;
+    //   }
 
     
 }

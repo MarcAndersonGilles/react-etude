@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../sass/scss/navbar.scss";
 import { Link } from 'react-router-dom';
+
 function Navbar() {
+  const [isOpen, setOpen] = useState(false);
   return (
-    <nav class ="navbar">
-        <ul className="navbar__list">
+    <nav className ="navbar">
+       {/* <div className="navbar__burger" onClick={() => setOpen(!isOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> */}
+      <ul className={`navbar__list ${isOpen ? 'navbar__list--open' : ''}`}>
       <li className="navbar__item">
         <Link to="/home" className="navbar__link">Home</Link>
       </li>
@@ -26,6 +35,6 @@ function Navbar() {
     </ul>
         </nav>
   );
-}
+};
 
 export default Navbar
