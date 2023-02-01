@@ -5,8 +5,9 @@ function Home() {
     <section>
 
         <div>
-            <h1>Home</h1>
-            <p>fdfdff</p>
+          <h1>Home test</h1>
+        <h1>Mon premier projet avec React</h1>
+            
         </div>
 
     </section>

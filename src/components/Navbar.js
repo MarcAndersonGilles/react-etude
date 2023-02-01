@@ -14,6 +14,15 @@ function Navbar() {
       <li className="navbar__item">
         <Link to="/profile" className="navbar__link">Profile</Link>
       </li>
+      <li className="navbar__item">
+        <Link to="/services" className="navbar__link">Services</Link>
+      </li>
+      <li className="navbar__item">
+        <Link to="/gallerie" className="navbar__link">Gallerie</Link>
+      </li>
+      <li className="navbar__item">
+        <Link to="/retroaction" className="navbar__link">Rétroaction</Link>
+      </li>
     </ul>
         </nav>
   );

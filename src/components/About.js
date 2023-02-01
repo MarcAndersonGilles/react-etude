@@ -3,9 +3,10 @@ import React from 'react'
 function About() {
   return (
     <div>
-        <p>fdfdff</p>
+      <h1>About test</h1>
+        <p>A propos de moi</p>
     </div>
-  )
+  );
 }
 
 export default About

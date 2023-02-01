@@ -1,7 +1,51 @@
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24292e;
+  padding: 1em;
+}
+
+.navbar__list {
+  flex-direction: row;
+  text-align: center;
+}
+
+.navbar__item {
+  margin: 1em 0;
+}
+
+.navbar__list {
+  display: flex;
   flex-direction: column;
-  background-color: black;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1em;
+  transition: background-color 0.2s ease-out;
+}
+
+.navbar__link:hover {
+  background-color: #3d3d3d;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar__list {
+    flex-direction: row;
+  }
+  .navbar__burger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar__list--open {
+    display: flex;
+  }
 }/*# sourceMappingURL=navbar.css.map */
