@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import firebase from 'firebase/compat/app';
@@ -61,7 +62,7 @@ class App extends React.Component {
             <Route path="/about" element={<About />} />
           </Routes>
           
-          
+          <Footer/>
         </div>
       </Router>
     );
