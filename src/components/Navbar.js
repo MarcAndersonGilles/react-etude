@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../sass/scss/navbar.scss";
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-  const [isOpen, setOpen] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
 
-  const toggleOpen = () => {
-    setOpen(!isOpen);
-  };
+  // const toggleOpen = () => {
+  //   setOpen(!isOpen);
+  // };
   return (
     <nav className ="navbar">
   
@@ -23,7 +23,7 @@ function Navbar() {
         <i className={`fa fa-bars ${isOpen ? 'open' : ''}`} />
       </div> */}
       
-      <ul className={`navbar__list ${isOpen ? 'navbar__list--open' : ''}`}>
+      <ul className="navbar__list navbar__list--open">
       <li className="navbar__item">
         <Link to="/home" className="navbar__link">Page d'accueil</Link>
       </li>

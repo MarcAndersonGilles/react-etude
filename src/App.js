@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 
 
@@ -6,13 +6,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
-import firebase from 'firebase/compat/app';
+//import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 
-import handleSubmit from './handles/handlesubmit';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+//import handleSubmit from './handles/handlesubmit';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   
