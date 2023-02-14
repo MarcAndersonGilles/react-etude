@@ -5,15 +5,6 @@ import { collection, addDoc} from "firebase/firestore";
 
 import "../sass/scss/todoApp.scss";
 
-
-// function AddTodo() {
-//   return (
-//     <div>AddTodo</div>
-//   )
-// }
-
-// export default AddTodo
-
 export default function AddTodo(){
     const [title, setTitle] = React.useState("");
     const handleSubmit = async (e) => {
