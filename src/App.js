@@ -1,12 +1,27 @@
 import React from 'react';
 import './App.css';
+
+import Todo from './components/Todo';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+
+import {
+  collection,
+  query,
+  onSnapshot,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
+import { db } from "./firebase";
+
 
 //import firebase from "./firebase_setup/firebase";
 import handleSubmit from './handles/handlesubmit';
@@ -14,20 +29,7 @@ import handleSubmit from './handles/handlesubmit';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 
-firebase.initializeApp({
-  /// your config
-  apiKey: "AIzaSyAHRJL9gGwVC2oGZkQ2m_hr47buo4ckcLQ",
-  authDomain: "react-etude-51ccd.firebaseapp.com",
-  databaseURL: "https://react-etude-51ccd-default-rtdb.firebaseio.com",
-  projectId: "react-etude-51ccd",
-  storageBucket: "react-etude-51ccd.appspot.com",
-  messagingSenderId: "230918704411",
-  appId: "1:230918704411:web:ddfaf8d6ff04e4f9fa97be",
-  measurementId: "G-E2PL6YNJJG"
-});
 
-const auth = firebase.auth();
-const firestore = firebase.firestore;
 
 class App extends React.Component {
   constructor(props) {
@@ -56,13 +58,17 @@ class App extends React.Component {
       
       <Router>
         <div className="App">
+          <div>
           <Navbar />
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Home />}  />
             <Route path="/about" element={<About />} />
           </Routes>
+          </div>
           
+          <div>
           <Footer/>
+          </div>
         </div>
       </Router>
     );
