@@ -34,7 +34,7 @@ export default function Todo({
                  <div>
                     <button
                     className='button-complete'
-                    onClicked={() => toggleComplete(todo)}
+                    onClick={() => toggleComplete(todo)}
                     >
                     <CheckCircleIcon id="i" />
                     </button>
