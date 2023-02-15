@@ -26,7 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
-        <div>
+        <div className='footer'>
           <Footer />
         </div>
       </div>

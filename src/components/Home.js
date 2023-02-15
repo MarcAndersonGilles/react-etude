@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react'
 import Todo from './Todo';
 import AddTodo from './AddTodo';
 import Title from './Title';
+
+import "../sass/scss/home.scss";
+
 import {
   collection,
   query,
@@ -43,7 +46,7 @@ function Home() {
   };
 
   return (
-    <section>
+    <section className='sectionHome'>
         
         <div>
           <div>
