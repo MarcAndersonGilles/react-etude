@@ -1,54 +1,52 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
 import "../sass/scss/navbar.scss";
+
+
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-  // const [isOpen, setOpen] = useState(false);
+  const hamburgerRef = useRef(null);
+  const navbarRef = useRef(null);
 
-  // const toggleOpen = () => {
-  //   setOpen(!isOpen);
-  // };
+  const handleClick = () => {
+    hamburgerRef.current.classList.toggle("active");
+    navbarRef.current.classList.toggle("active");
+  }
+
+  const handleLinkClick = () => {
+    hamburgerRef.current.classList.remove("active");
+    navbarRef.current.classList.remove("active");
+  }
+
   return (
     <nav className ="navbar">
   
-  <div class="container nav-container ">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
-            
-      {/* <div className="navbar__toggle" onClick={toggleOpen}>
-        <i className={`fa fa-bars ${isOpen ? 'open' : ''}`} />
-      </div> */}
+        <div ref={hamburgerRef} className="hamburger-lines" onClick={handleClick}>
+          <span className="line line1"></span>
+          <span className="line line2"></span>
+          <span className="line line3"></span>
+        </div>
       
-      <ul className="navbar__list navbar__list--open">
-      <li className="navbar__item">
-        <Link to="/home" className="navbar__link">Page d'accueil</Link>
-      </li>
-      <li className="navbar__item">
-        <Link to="/about" className="navbar__link">À propos de moi</Link>
-      </li>
-      <li className="navbar__item">
-        <Link to="/profile" className="navbar__link">Profil</Link>
-      </li>
-      <li className="navbar__item">
-        <Link to="/services" className="navbar__link">Services</Link>
-      </li>
-      <li className="navbar__item">
-        <Link to="/gallerie" className="navbar__link">Galerie</Link>
-      </li>
-      <li className="navbar__item">
-        <Link to="/retroaction" className="navbar__link">Rétroaction</Link>
-      </li>
-    </ul>
+            
+          
+      
+        <ul ref={navbarRef} className="navbar__list ">
+          <li className="navbar__item">
+            <Link to="/" className="navbar__link" onClick={handleLinkClick}>App</Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/about" className="navbar__link" onClick={handleLinkClick}>Catalogue</Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/profile" className="navbar__link" onClick={handleLinkClick}>Contact</Link>
+          </li>
+          
+        </ul>
 
-    
-    </div>  
-        </nav>
-        
+      
+    </nav>
   );
 };
 
-export default Navbar
+export default Navbar;
