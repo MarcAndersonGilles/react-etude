@@ -1,0 +1,120 @@
+.navbar {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #764ba2, #667eea);
+  padding: 1em;
+}
+
+.navbar__item {
+  margin: 1em 0;
+}
+
+.navbar__list {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+  border-bottom: 2px solid #333;
+  color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1em;
+  transition: background-color 0.2s ease-out;
+}
+
+.navbar__link:hover {
+  background-image: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.nav-container .checkbox {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .navbar__list {
+  display: flex;
+  width: 100%;
+  transform: translate(-150%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-container input[type=checkbox]:checked ~ .navbar__list {
+  transform: translateX(0);
+}
+
+.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type=checkbox]:checked ~ .logo {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    color: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=navbar.css.map */
