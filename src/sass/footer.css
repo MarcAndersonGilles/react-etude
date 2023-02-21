@@ -1,6 +1,37 @@
 .footerPrincipal {
   display: flex;
-  background-image: linear-gradient(to right, #667eea, #764ba2);
+  flex-direction: column;
+  background-color: #9D19C4;
   min-height: 100px;
   width: 100%;
+  padding: 10px;
+}
+
+.footerH1 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footerTexte {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.iconsFooter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
 }/*# sourceMappingURL=footer.css.map */

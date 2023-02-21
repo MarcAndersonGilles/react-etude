@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 ////rfce
+
 import Todo from './Todo';
 import AddTodo from './AddTodo';
 import Title from './Title';
@@ -15,6 +16,7 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 import { db } from "../firebase";
+
 
 function Home() {
   const [todos, setTodos] = useState([]);
