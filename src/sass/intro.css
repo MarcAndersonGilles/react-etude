@@ -1,0 +1,7 @@
+.Intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 360px;
+}/*# sourceMappingURL=intro.css.map */

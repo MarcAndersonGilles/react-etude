@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "../sass/scss/difficulte.scss";
 
 function Difficulte() {
   return (
-    <div>Difficulte</div>
+    <div className='difficulte'>
+        Difficulte
+    </div>
   )
 }
 

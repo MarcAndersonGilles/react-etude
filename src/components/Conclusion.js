@@ -1,8 +1,11 @@
 import React from 'react'
+import "../sass/scss/conclusion.scss";
 
 function Conclusion() {
   return (
-    <div>Conclusion</div>
+    <div className='conclusion'>
+        Conclusion
+        </div>
   )
 }
 

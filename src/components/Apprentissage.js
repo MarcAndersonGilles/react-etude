@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "../sass/scss/apprentissages.scss";
 
 function Apprentissage() {
   return (
-    <div>Apprentissage</div>
+    <div className='apprentissages'>
+        Apprentissage
+        </div>
   )
 }
 
