@@ -1,5 +1,6 @@
 import React from 'react'
 
+import "../sass/scss/title.scss";
 function Title() {
   return (
     <div className='title'>

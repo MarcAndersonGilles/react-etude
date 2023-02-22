@@ -36,11 +36,17 @@ function Navbar() {
             <Link to="/" className="navbar__link" onClick={handleLinkClick}>App</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/about" className="navbar__link" onClick={handleLinkClick}>Catalogue</Link>
+            <Link to="/intro" className="navbar__link" onClick={handleLinkClick}>Intro</Link>
+          </li> 
+          <li className="navbar__item">
+            <Link to="/apprentissages" className="navbar__link" onClick={handleLinkClick}>Apprentissages</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/profile" className="navbar__link" onClick={handleLinkClick}>Contact</Link>
+            <Link to="/difficulte" className="navbar__link" onClick={handleLinkClick}>Difficultées</Link>
           </li>
+          <li className="navbar__item">
+            <Link to="/conclusion" className="navbar__link" onClick={handleLinkClick}>Conclusion</Link>
+          </li> 
           
         </ul>
 

@@ -5,7 +5,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import About from './components/About';
+
+import Difficulte from './components/Difficulte';
+import Apprentissage from './components/Apprentissage';
+import Conclusion from './components/Conclusion';
+import Intro from './components/Intro';
 //import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
@@ -23,7 +27,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/intro" element={<Intro />} />
+            <Route path="/apprentissages" element={<Apprentissage />} />
+            <Route path="/difficulte" element={<Difficulte />} />
+            <Route path="/conclusion" element={<Conclusion />} />
           </Routes>
         </div>
         <div className='footer'>
