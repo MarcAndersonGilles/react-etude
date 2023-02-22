@@ -13,6 +13,7 @@ export default function Todo({
     handleEdit,
 }) {
     const [newTitle, setNewTitle] = React.useState(todo.title);
+    const [newDescription] = React.useState(todo.description);
     const handleChange = (e) => {
         e.preventDefault();
         if(todo.completed === true){
@@ -31,6 +32,13 @@ export default function Todo({
                 className="list"
                 onChange={handleChange}
                  />
+                 <input
+                style={{textDecoration: todo.completed && "line-through"}}
+                type="text"
+                value={todo.description === "" ? newDescription : todo.description}
+                className="list"
+                onChange={handleChange}
+                />
                  <div>
                     <button
                     className='button-complete'
