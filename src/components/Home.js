@@ -33,8 +33,8 @@ function Home() {
     return () => unsub();
   }, []);
 
-  const handleEdit = async (todo, title) => {
-    await updateDoc(doc(db, "todos", todo.id), { title: title });
+  const handleEdit = async (id, title, description) => {
+    await updateDoc(doc(db, "todos", id), { title, description });
   };
 
   const toggleComplete = async (todo) => {

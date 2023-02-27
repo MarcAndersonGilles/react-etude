@@ -20,6 +20,7 @@ export default function AddTodo(){
             setDescription(""); // Reset the description field after submitting the form
         }
     };
+    
     return (
         <form onSubmit={handleSubmit}>
             <div className='input_container'>
