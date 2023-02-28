@@ -42,7 +42,7 @@ function Navbar() {
             <Link to="/apprentissages" className="navbar__link" onClick={handleLinkClick}>Apprentissages</Link>
           </li>
           <li className="navbar__item">
-            <Link to="/difficulte" className="navbar__link" onClick={handleLinkClick}>Difficultées</Link>
+            <Link to="/difficulte" className="navbar__link" onClick={handleLinkClick}>Difficultés</Link>
           </li>
           <li className="navbar__item">
             <Link to="/conclusion" className="navbar__link" onClick={handleLinkClick}>Conclusion</Link>

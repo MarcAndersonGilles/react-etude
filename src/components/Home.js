@@ -20,6 +20,8 @@ import { db } from "../firebase";
 
 function Home() {
   const [todos, setTodos] = useState([]);
+  const [filter, setFilter] = useState('all');
+  const [filteredTodos, setFilteredTodos] = useState([]);
 
   useEffect(() => {
     const q = query(collection(db, 'todos'));
@@ -33,8 +35,19 @@ function Home() {
     return () => unsub();
   }, []);
 
-  const handleEdit = async (todo, title) => {
-    await updateDoc(doc(db, "todos", todo.id), { title: title });
+  useEffect(() => {
+    // Filter the todos based on the current filter state
+    if (filter === 'completed') {
+      setFilteredTodos(todos.filter((todo) => todo.completed));
+    } else if (filter === 'uncompleted') {
+      setFilteredTodos(todos.filter((todo) => !todo.completed));
+    } else {
+      setFilteredTodos(todos);
+    }
+  }, [filter, todos]);
+
+  const handleEdit = async (id, title, description, date) => {
+    await updateDoc(doc(db, "todos", id), { title, description, date });
   };
 
   const toggleComplete = async (todo) => {
@@ -57,8 +70,15 @@ function Home() {
           <div>
             <AddTodo />
           </div>
+          <div className='todoFiltre'>
+              <button className='filtre' onClick={() => setFilter('all')}>Toutes</button>
+              <button className='filtre' onClick={() => setFilter('completed')}>Terminées</button>
+              <button className='filtre' onClick={() => setFilter('uncompleted')}>Non terminées</button>
+              
+
+            </div>
         <div className='todo_container'>
-          {todos.map((todo) =>(
+          {filteredTodos.map((todo) =>(
           <Todo 
           key={todo.id}
           todo={todo}
