@@ -46,8 +46,8 @@ function Home() {
     }
   }, [filter, todos]);
 
-  const handleEdit = async (id, title, description) => {
-    await updateDoc(doc(db, "todos", id), { title, description });
+  const handleEdit = async (id, title, description, date) => {
+    await updateDoc(doc(db, "todos", id), { title, description, date });
   };
 
   const toggleComplete = async (todo) => {

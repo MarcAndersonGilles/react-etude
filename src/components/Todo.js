@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -10,19 +10,23 @@ export default function Todo({
   handleDelete,
   handleEdit,
 }) {
-  const [isEditing, setIsEditing] = React.useState(false);
-  const [newTitle, setNewTitle] = React.useState(todo.title);
-  const [newDescription, setNewDescription] = React.useState(todo.description); // Add a new state variable for the description
+  const [isEditing, setIsEditing] = useState(false);
+  const [newTitle, setNewTitle] = useState(todo.title);
+  const [newDescription, setNewDescription] = useState(todo.description); // Add a new state variable for the description
+  const [newDate, setNewDate] = useState(todo.date);
+
   const handleChange = (e) => {
     if (e.target.name === "title") {
       setNewTitle(e.target.value);
     } else if (e.target.name === "description") { // Update the newDescription state variable when the description input changes
       setNewDescription(e.target.value);
-    }
+    } else if (e.target.name === "date") { // Update the newDate state variable when the date input changes
+        setNewDate(e.target.value);
+      }
   };
   const handleEditSubmit = (e) => {
     e.preventDefault();
-    handleEdit(todo.id, newTitle, newDescription); // Pass the updated title and description to the handleEdit function
+    handleEdit(todo.id, newTitle, newDescription, newDate); // Pass the updated title and description to the handleEdit function
     setIsEditing(false);
   };
   return (
@@ -43,6 +47,13 @@ export default function Todo({
             className="list"
             onChange={handleChange}
           />
+          <input
+            type="text"
+            name="date"
+            value={newDate}
+            className="list"
+            onChange={handleChange}
+          />
           <div className='boutonModification'>
           <button type="submit">
             Save
@@ -58,14 +69,21 @@ export default function Todo({
           <input
             style={{ textDecoration: todo.completed && 'line-through' }}
             type="text"
-            value={todo.title}
+            value={`Tâche: ${todo.title}`}
             className="list"
             readOnly
           />
           <input
             style={{ textDecoration: todo.completed && 'line-through' }}
             type="text"
-            value={todo.description}
+            value={`Description: ${todo.description}`}
+            className="list"
+            readOnly
+          />
+          <input
+            style={{ textDecoration: todo.completed && 'line-through' }}
+            type="text"
+            value={`Date: ${todo.date}`}
             className="list"
             readOnly
           />
