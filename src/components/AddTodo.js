@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { db } from "../firebase";
 import { collection, addDoc} from "firebase/firestore";
@@ -6,9 +6,9 @@ import { collection, addDoc} from "firebase/firestore";
 import "../sass/scss/todoApp.scss";
 
 export default function AddTodo(){
-    const [title, setTitle] = React.useState("");
-    const [description, setDescription] = React.useState(""); 
-    const [date, setDate] = React.useState("");
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState(""); 
+    const [date, setDate] = useState("");
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (title !== ""){
@@ -35,7 +35,7 @@ export default function AddTodo(){
                  placeholder="Description de la tâche..."
                   value={description}
                    onChange={(e) => setDescription(e.target.value)} />
-                   <input type="text" // Add a new input element for the description
+                   <input type="date" // Add a new input element for the description
                  placeholder="Entre la date de la tâche..."
                   value={date}
                    onChange={(e) => setDate(e.target.value)} />
