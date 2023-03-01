@@ -73,6 +73,7 @@ export default function Todo({
             className="list"
             readOnly
           />
+          
           <input
             style={{ textDecoration: todo.completed && 'line-through' }}
             type="text"
@@ -87,6 +88,7 @@ export default function Todo({
             className="list"
             readOnly
           />
+
           <div>
             <button className='button-complete' onClick={() => toggleComplete(todo)}>
               <CheckCircleIcon id='i' />

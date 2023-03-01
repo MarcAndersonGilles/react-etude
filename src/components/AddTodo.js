@@ -27,6 +27,7 @@ export default function AddTodo(){
     return (
         <form onSubmit={handleSubmit}>
             <div className='input_container'>
+                <div className='inputBox'>
                 <input type="text"
                  placeholder="Entre la tâche..."
                   value={title}
@@ -34,11 +35,14 @@ export default function AddTodo(){
                 <input type="text" // Add a new input element for the description
                  placeholder="Description de la tâche..."
                   value={description}
-                   onChange={(e) => setDescription(e.target.value)} />
+                   onChange={(e) => setDescription(e.target.value)}
+                   />
                    <input type="date" // Add a new input element for the description
                  placeholder="Entre la date de la tâche..."
                   value={date}
-                   onChange={(e) => setDate(e.target.value)} />
+                   onChange={(e) => setDate(e.target.value)}
+                   className="custom-date-input" />
+            </div>
             </div>
             <div className='btn_container'>
             <button>Ajouter</button>

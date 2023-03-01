@@ -5,8 +5,16 @@
     align-items: center;
     margin-bottom: 20px;
   }
-  
-  input[type="text"] {
+  .inputBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 25px #9D19C4;
+    border-radius: 0.5em;
+    min-width: 50%;
+  }
+  // inputs du todos_container
+  .todo input[type="text"] {
     width: 60%;
     padding: 10px;
     border: 1px solid lightgray;
@@ -15,6 +23,18 @@
     outline: none;
     box-shadow: 0 0 5px lightgray;
   }
+  // inputs du input_container
+  .input_container input[type="text"]{
+   
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 0 5px lightgray;
+  }
+  
+
   input[type="text"]::-webkit-input-placeholder { 
     font-style: italic;
     color: lightgray;
@@ -29,6 +49,7 @@
     font-style: italic;
     color: lightgray;
   }
+  
   
   
   .btn_container {
@@ -53,3 +74,46 @@
     background-color: deepskyblue;
     border-color: deepskyblue;
   }
+  ///date input
+  .custom-date-input {
+  // background-color: #f0f0f0;
+  // font-size: 16px;
+  // padding: 10px 15px;
+  // color: #333;
+  // border-radius: 10px;
+      padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.custom-date-input::-webkit-calendar-picker-indicator {
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: solid 5px black;
+}
+
+.custom-date-input::-webkit-calendar-picker-indicator:hover {
+  background-color: #333;
+  animation-name: custom-hover-animation;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes custom-hover-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

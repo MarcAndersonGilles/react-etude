@@ -38,9 +38,9 @@ function Home() {
   useEffect(() => {
     // Filter the todos based on the current filter state
     if (filter === 'completed') {
-      setFilteredTodos(todos.filter((todo) => todo.completed));
+      setFilteredTodos(todos.filter((todo) => todo.completed).sort((a, b) => a.date.localeCompare(b.date)));
     } else if (filter === 'uncompleted') {
-      setFilteredTodos(todos.filter((todo) => !todo.completed));
+      setFilteredTodos(todos.filter((todo) => !todo.completed).sort((a, b) => a.date.localeCompare(b.date)));
     } else {
       setFilteredTodos(todos);
     }
