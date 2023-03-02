@@ -20,22 +20,45 @@ h2 {
   justify-content: center;
 }
 
-.introImagesSection {
+.introSectionImages {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introImagesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
 }
 
 .imgIntro {
-  width: 10vh;
-  height: 10vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 20vh;
+  min-height: 20vh;
+}
+
+.buttonIntro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 50px;
 }
 
 @media screen and (min-width: 560px) {
   .intro {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+  }
+  .imgIntro {
+    width: 20vh;
+    min-height: 20vh;
+  }
+  .introImagesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .introSectionImages {
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=intro.css.map */
