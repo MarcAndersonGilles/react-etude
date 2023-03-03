@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 ////rfce
 
+import { Link } from 'react-router-dom';
+
 import Todo from './Todo';
 import AddTodo from './AddTodo';
 import Title from './Title';
@@ -89,6 +91,11 @@ function Home() {
            ))}
           
         </div>
+        <div className='buttonSection'>
+        <Link to="/conclusion">
+      <button className='buttonIntro' >Continuer</button>
+       </Link>
+      </div>
         </div>
 
     </section>

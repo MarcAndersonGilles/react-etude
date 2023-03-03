@@ -5,6 +5,8 @@ import reactJSapprentissage from '../assets/img/reactJSapprentissage.png';
 import javascriptXML from '../assets/img/javascriptXML.png';
 import firebaseImg from '../assets/img/firebase.png';
 
+import { Link } from 'react-router-dom';
+
 function Difficulte() {
   return (
     <div className='difficulte'>
@@ -32,6 +34,11 @@ function Difficulte() {
             essentially unchanged.</p>
             <div><img className='imgIntro' src={firebaseImg} alt="test2"/></div>
         </div>
+        <div className='buttonSection'>
+        <Link to="/">
+      <button className='buttonIntro' >Continuer</button>
+       </Link>
+      </div>
     </div>
   )
 }

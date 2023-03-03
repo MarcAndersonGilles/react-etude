@@ -4,6 +4,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.apprentissagesSections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-image: url(/assets/img/purpleBackground.jpg);
   background-size: 100% 100%;
   background-position: center;

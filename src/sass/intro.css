@@ -30,6 +30,7 @@ h2 {
 .introImagesGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
   gap: 10px;
 }
 
@@ -39,10 +40,15 @@ h2 {
 }
 
 .buttonIntro {
+  width: 100%;
+  padding: 20px 80px;
+  margin-bottom: 50px;
+}
+
+.buttonSection {
   display: flex;
-  flex-direction: row;
+  width: 100%;
   justify-content: center;
-  min-width: 50px;
 }
 
 @media screen and (min-width: 560px) {
@@ -55,10 +61,15 @@ h2 {
     min-height: 20vh;
   }
   .introImagesGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .introSectionImages {
     flex-direction: column;
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .introImagesGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=intro.css.map */

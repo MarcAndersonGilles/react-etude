@@ -32,9 +32,12 @@ function Intro() {
         <div><img className='imgIntro' src={firebase} alt="test2"/></div>
         <div><img className='imgIntro' src={css} alt="test2"/></div>
       </div>
-      <Link to="/apprentissages">
+      <div className='buttonSection'>
+        <Link to="/apprentissages">
       <button className='buttonIntro' >Débuter</button>
-      </Link>
+       </Link>
+      </div>
+      
       
       
       </div>
