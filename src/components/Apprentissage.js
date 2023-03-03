@@ -38,4 +38,4 @@ function Apprentissage() {
   )
 }
 
-export default Apprentissage
+export default Apprentissage;
