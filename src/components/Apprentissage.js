@@ -1,7 +1,7 @@
 import React from 'react';
 import "../sass/scss/apprentissages.scss";
 
-import reactJSapprentissage from '../assets/img/reactJSapprentissage.jpg';
+import reactJSapprentissage from '../assets/img/reactJSapprentissage.png';
 import javascriptXML from '../assets/img/javascriptXML.png';
 import firebaseImg from '../assets/img/firebase.png';
 
