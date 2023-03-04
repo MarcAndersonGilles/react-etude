@@ -43,10 +43,11 @@ export default function AddTodo(){
                    onChange={(e) => setDate(e.target.value)}
                    className="custom-date-input" />
             </div>
-            </div>
             <div className='btn_container'>
-            <button>Ajouter</button>
+            <button className='buttonAddTodo'>Ajouter</button>
             </div>
+            </div>
+            
         </form>
     );
 }

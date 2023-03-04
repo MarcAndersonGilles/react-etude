@@ -1,11 +1,30 @@
 .sectionHome {
   display: flex;
   flex-direction: column;
-  background-image: url(/assets/img/imgBackgroundTodoApp.png);
+  background-image: url(/assets/img/purpleBuble.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #9D19C4;
   padding: 0 10px 100px 10px;
+}
+
+.todo_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo_background {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 865px; */
+  /* background-color: black; */
+  border-radius: 1em;
+  background-image: url(/assets/img/backgroundForm.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .todoFiltre {
@@ -16,14 +35,26 @@
 }
 
 .filtre {
-  background-color: #9D19C4;
-  min-width: 100px;
-  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background-image: url(/assets/img/woodBlock.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 200px;
+  color: white;
+  margin-right: 5px;
 }
 
+@media screen and (max-width: 759px) {
+  .filtre {
+    padding: 20px 80px;
+  }
+}
 @media screen and (min-width: 760px) {
   .todoFiltre {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }/*# sourceMappingURL=home.css.map */

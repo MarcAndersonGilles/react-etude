@@ -71,15 +71,17 @@ function Home() {
           </div>
           <div>
             <AddTodo />
+            
           </div>
+
           <div className='todoFiltre'>
               <button className='filtre' onClick={() => setFilter('all')}>Toutes</button>
               <button className='filtre' onClick={() => setFilter('completed')}>Terminées</button>
               <button className='filtre' onClick={() => setFilter('uncompleted')}>Non terminées</button>
-              
-
             </div>
+
         <div className='todo_container'>
+          <div className='todo_background'> 
           {filteredTodos.map((todo) =>(
           <Todo 
           key={todo.id}
@@ -89,7 +91,7 @@ function Home() {
           handleEdit={handleEdit}
           />
            ))}
-          
+          </div>
         </div>
         <div className='buttonSection'>
         <Link to="/conclusion">

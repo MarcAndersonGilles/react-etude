@@ -4,15 +4,18 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    
+    
   }
   .inputBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 25px #9D19C4;
+    border: solid 25px black;
     border-radius: 0.5em;
     min-width: 50%;
   }
+  
   // inputs du todos_container
   .todo input[type="text"] {
     width: 60%;
@@ -22,6 +25,13 @@
     font-size: 18px;
     outline: none;
     box-shadow: 0 0 5px lightgray;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background-image: url(/assets/img/backgroundInput.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color:black;
   }
   // inputs du input_container
   .input_container input[type="text"]{
@@ -32,6 +42,13 @@
     font-size: 18px;
     outline: none;
     box-shadow: 0 0 5px lightgray;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background-image: url(/assets/img/backgroundInput.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color:white;
   }
   
 
@@ -55,6 +72,11 @@
   .btn_container {
     display: flex;
     justify-content: center;
+  }
+  .buttonAddTodo{
+    width: 100%;
+    padding: 20px 80px;
+    background-color: black;
   }
   
   button {
@@ -87,6 +109,13 @@
     font-size: 18px;
     outline: none;
     box-shadow: 0 0 5px lightgrey;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background-image: url(/assets/img/backgroundInput.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color:white;
 }
 
 .custom-date-input::-webkit-calendar-picker-indicator {
@@ -96,6 +125,7 @@
   font-size: 18px;
   padding: 5px 10px;
   border: solid 5px black;
+  
 }
 
 .custom-date-input::-webkit-calendar-picker-indicator:hover {
