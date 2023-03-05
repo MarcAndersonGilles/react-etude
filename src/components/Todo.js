@@ -4,37 +4,42 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "../sass/scss/todoInterface.scss";
 
+// Component Todo
 export default function Todo({
   todo,
   toggleComplete,
   handleDelete,
   handleEdit,
 }) {
+  // Initialisation des states
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(todo.title);
-  const [newDescription, setNewDescription] = useState(todo.description); // Add a new state variable for the description
+  const [newDescription, setNewDescription] = useState(todo.description);
   const [newDate, setNewDate] = useState(todo.date);
 
+  // Fonction handleChange pour gérer la modification des inputs
   const handleChange = (e) => {
     if (e.target.name === "title") {
       setNewTitle(e.target.value);
     } else if (e.target.name === "description") {
-      // Update the newDescription state variable when the description input changes
       setNewDescription(e.target.value);
     } else if (e.target.name === "date") {
-      // Update the newDate state variable when the date input changes
       setNewDate(e.target.value);
     }
   };
+  // Fonction handleEditSubmit pour gérer la soumission du formulaire de modification
   const handleEditSubmit = (e) => {
     e.preventDefault();
-    handleEdit(todo.id, newTitle, newDescription, newDate); // Pass the updated title and description to the handleEdit function
+    handleEdit(todo.id, newTitle, newDescription, newDate);
     setIsEditing(false);
   };
+  // Rendu du component Todo
   return (
     <div className="todo">
+      {/* Si on est en mode édition */}
       {isEditing ? (
         <form onSubmit={handleEditSubmit}>
+          {/* Input pour le titre */}
           <input
             type="text"
             name="title"
@@ -42,6 +47,7 @@ export default function Todo({
             className="list"
             onChange={handleChange}
           />
+          {/* Textarea pour le description */}
           <textarea
             type="text"
             name="description"
@@ -49,6 +55,7 @@ export default function Todo({
             className="list"
             onChange={handleChange}
           />
+          {/* Input pour le data */}
           <input
             type="text"
             name="date"
@@ -56,6 +63,7 @@ export default function Todo({
             className="list"
             onChange={handleChange}
           />
+          {/* Boutons pour valider ou annuler la modification */}
           <div className="boutonModification">
             <button type="submit">Save</button>
             <button onClick={() => setIsEditing(false)}>Cancel</button>
@@ -63,7 +71,9 @@ export default function Todo({
         </form>
       ) : (
         <>
+          {/* Si on n'est pas en mode édition */}
           <form>
+            {/* Input pour le titre, avec la possibilité d'avoir une ligne barrée si la tâche est complétée */}
             <input
               style={{ textDecoration: todo.completed && "line-through" }}
               type="text"
@@ -71,7 +81,7 @@ export default function Todo({
               className="list"
               readOnly
             />
-
+            {/* Textarea pour le description, avec la possibilité d'avoir une ligne barrée si la tâche est complétée */}
             <textarea
               style={{ textDecoration: todo.completed && "line-through" }}
               type="text"
@@ -79,6 +89,7 @@ export default function Todo({
               className="list"
               readOnly
             />
+            {/* Input pour le date, avec la possibilité d'avoir une ligne barrée si la tâche est complétée */}
             <input
               style={{ textDecoration: todo.completed && "line-through" }}
               type="text"
@@ -89,15 +100,18 @@ export default function Todo({
           </form>
 
           <div>
+            {/* Bouton pour marquer une tâche comme complétée */}
             <button
               className="button-complete"
               onClick={() => toggleComplete(todo)}
             >
               <CheckCircleIcon id="i" />
             </button>
+            {/* Bouton pour éditer une tâche */}
             <button className="button-edit" onClick={() => setIsEditing(true)}>
               <EditIcon id="i" />
             </button>
+            {/* Bouton pour supprimer une tâche */}
             <button className="delete" onClick={() => handleDelete(todo.id)}>
               <DeleteIcon id="i" />
             </button>
