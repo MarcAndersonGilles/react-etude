@@ -40,7 +40,7 @@ function Navbar() {
         </li>
         <li className="navbar__item">
           <Link
-            to="/apprentissages"
+            to="/react-etude/apprentissages"
             className="navbar__link"
             onClick={handleLinkClick}
           >
@@ -49,7 +49,7 @@ function Navbar() {
         </li>
         <li className="navbar__item">
           <Link
-            to="/difficulte"
+            to="/react-etude/difficulte"
             className="navbar__link"
             onClick={handleLinkClick}
           >
@@ -57,13 +57,17 @@ function Navbar() {
           </Link>
         </li>
         <li className="navbar__item">
-          <Link to="/app" className="navbar__link" onClick={handleLinkClick}>
+          <Link
+            to="/react-etude/app"
+            className="navbar__link"
+            onClick={handleLinkClick}
+          >
             Application
           </Link>
         </li>
         <li className="navbar__item">
           <Link
-            to="/conclusion"
+            to="/react-etude/conclusion"
             className="navbar__link"
             onClick={handleLinkClick}
           >

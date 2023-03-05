@@ -24,10 +24,13 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/react-etude/" element={<Intro />} />
-            <Route path="/apprentissages" element={<Apprentissage />} />
-            <Route path="/difficulte" element={<Difficulte />} />
-            <Route path="/app" element={<Home />} />
-            <Route path="/conclusion" element={<Conclusion />} />
+            <Route
+              path="/react-etude/apprentissages"
+              element={<Apprentissage />}
+            />
+            <Route path="/react-etude/difficulte" element={<Difficulte />} />
+            <Route path="/react-etude/app" element={<Home />} />
+            <Route path="/react-etude/conclusion" element={<Conclusion />} />
           </Routes>
         </div>
         <div className="footer">
