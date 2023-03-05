@@ -68,7 +68,7 @@ function Difficulte() {
         </div>
       </div>
       <div className="buttonSection">
-        <Link to="/app">
+        <Link to="/react-etude/app">
           <button className="buttonIntro">Continuer</button>
         </Link>
       </div>

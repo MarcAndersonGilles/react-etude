@@ -76,7 +76,7 @@ function Apprentissage() {
         </div>
       </div>
       <div className="buttonSection">
-        <Link to="/difficulte">
+        <Link to="/react-etude/difficulte">
           <button className="buttonIntro">Continuer</button>
         </Link>
       </div>

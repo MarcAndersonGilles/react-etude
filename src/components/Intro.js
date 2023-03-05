@@ -40,7 +40,7 @@ function Intro() {
           </div>
         </div>
         <div className="buttonSection">
-          <Link to="/apprentissages">
+          <Link to="/react-etude/apprentissages">
             <button className="buttonIntro">Débuter</button>
           </Link>
         </div>

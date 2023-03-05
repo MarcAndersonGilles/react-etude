@@ -116,7 +116,7 @@ function Home() {
         </div>
 
         <div className="buttonSection">
-          <Link to="/conclusion">
+          <Link to="/react-etude/conclusion">
             <button className="buttonApp">Continuer</button>
           </Link>
         </div>
