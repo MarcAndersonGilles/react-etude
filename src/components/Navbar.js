@@ -33,16 +33,16 @@ function Navbar() {
       
         <ul ref={navbarRef} className="navbar__list ">
           <li className="navbar__item">
-            <Link to="/" className="navbar__link" onClick={handleLinkClick}>App</Link>
-          </li>
-          <li className="navbar__item">
-            <Link to="/intro" className="navbar__link" onClick={handleLinkClick}>Intro</Link>
+            <Link to="/react-etude" className="navbar__link" onClick={handleLinkClick}>Intro</Link>
           </li> 
           <li className="navbar__item">
             <Link to="/apprentissages" className="navbar__link" onClick={handleLinkClick}>Apprentissages</Link>
           </li>
           <li className="navbar__item">
             <Link to="/difficulte" className="navbar__link" onClick={handleLinkClick}>Difficultés</Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/app" className="navbar__link" onClick={handleLinkClick}>Application</Link>
           </li>
           <li className="navbar__item">
             <Link to="/conclusion" className="navbar__link" onClick={handleLinkClick}>Conclusion</Link>

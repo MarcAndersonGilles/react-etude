@@ -40,7 +40,7 @@ export default function Todo({
             className="list"
             onChange={handleChange}
           />
-          <input
+          <textarea
             type="text"
             name="description"
             value={newDescription}
@@ -66,6 +66,7 @@ export default function Todo({
         </form>
       ) : (
         <>
+        <form>
           <input
             style={{ textDecoration: todo.completed && 'line-through' }}
             type="text"
@@ -74,7 +75,7 @@ export default function Todo({
             readOnly
           />
           
-          <input
+          <textarea
             style={{ textDecoration: todo.completed && 'line-through' }}
             type="text"
             value={`Description: ${todo.description}`}
@@ -88,6 +89,7 @@ export default function Todo({
             className="list"
             readOnly
           />
+          </form>
 
           <div>
             <button className='button-complete' onClick={() => toggleComplete(todo)}>

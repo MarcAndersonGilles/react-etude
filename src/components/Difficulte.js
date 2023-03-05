@@ -35,7 +35,7 @@ function Difficulte() {
             <div><img className='imgIntro' src={firebaseImg} alt="test2"/></div>
         </div>
         <div className='buttonSection'>
-        <Link to="/">
+        <Link to="/app">
       <button className='buttonIntro' >Continuer</button>
        </Link>
       </div>

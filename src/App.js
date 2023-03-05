@@ -27,10 +27,10 @@ function App() {
         <div>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/intro" element={<Intro />} />
+            <Route path="/react-etude/" element={<Intro />} />
             <Route path="/apprentissages" element={<Apprentissage />} />
             <Route path="/difficulte" element={<Difficulte />} />
+            <Route path="/app" element={<Home />} />
             <Route path="/conclusion" element={<Conclusion />} />
           </Routes>
         </div>

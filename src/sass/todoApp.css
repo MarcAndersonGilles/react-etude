@@ -4,6 +4,18 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-bottom: 143px;
+}
+
+.titreTodoApp {
+  border: solid white 5px;
+  min-width: 50%;
+  border-radius: 10px;
+  background-image: url(/assets/img/backgroundForm.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 80px 10px 90px;
 }
 
 .inputBox {
@@ -15,7 +27,15 @@
   min-width: 50%;
 }
 
-.todo input[type=text] {
+.iconButtonTodo {
+  font-size: 3em;
+}
+
+.formeTodo {
+  background-color: #d326fe;
+}
+
+.todo input[type=text], .todo textarea[type=text] {
   width: 60%;
   padding: 10px;
   border: 1px solid lightgray;
@@ -24,7 +44,7 @@
   outline: none;
   box-shadow: 0 0 5px lightgray;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background-image: url(/assets/img/backgroundInput.jpg);
+  background-color: white;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +52,7 @@
   color: black;
 }
 
-.input_container input[type=text] {
+.input_container input[type=text], .input_container textarea[type=text] {
   padding: 10px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -40,7 +60,7 @@
   outline: none;
   box-shadow: 0 0 5px lightgray;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background-image: url(/assets/img/backgroundInput.jpg);
+  background-color: #be5af2;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,17 +68,17 @@
   color: white;
 }
 
-input[type=text]::-webkit-input-placeholder {
+input[type=text]::-webkit-input-placeholder, textarea[type=text]::-webkit-input-placeholder {
   font-style: italic;
   color: lightgray;
 }
 
-input[type=text]::-moz-placeholder {
+input[type=text]::-moz-placeholder, textarea[type=text]::-moz-placeholder {
   font-style: italic;
   color: lightgray;
 }
 
-input[type=text]::-ms-input-placeholder {
+input[type=text]::-ms-input-placeholder, textarea[type=text]::-ms-input-placeholder {
   font-style: italic;
   color: lightgray;
 }
@@ -70,7 +90,7 @@ input[type=text]::-ms-input-placeholder {
 
 .buttonAddTodo {
   width: 100%;
-  padding: 20px 80px;
+  padding: 10px 60px 10px 60px;
   background-color: black;
 }
 
@@ -100,7 +120,7 @@ button:hover {
   outline: none;
   box-shadow: 0 0 5px lightgrey;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background-image: url(/assets/img/backgroundInput.jpg);
+  background-color: #be5af2;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +134,8 @@ button:hover {
   cursor: pointer;
   font-size: 18px;
   padding: 5px 10px;
-  border: solid 5px black;
+  border: solid 5px white;
+  background-color: white;
 }
 
 .custom-date-input::-webkit-calendar-picker-indicator:hover {

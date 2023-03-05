@@ -9,6 +9,10 @@
   padding: 0 10px 100px 10px;
 }
 
+.divTodoContainer {
+  background-color: black;
+}
+
 .todo_container {
   width: 100%;
   display: flex;
@@ -18,19 +22,19 @@
 .todo_background {
   display: flex;
   flex-direction: column;
-  /* max-width: 865px; */
-  /* background-color: black; */
   border-radius: 1em;
   background-image: url(/assets/img/backgroundForm.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 0;
 }
 
 .todoFiltre {
   display: flex;
   margin-top: 40px;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -47,14 +51,24 @@
   margin-right: 5px;
 }
 
-@media screen and (max-width: 759px) {
-  .filtre {
-    padding: 20px 80px;
-  }
+.tachesH1 {
+  color: white;
+  border: solid;
 }
+
+.buttonApp {
+  width: 100%;
+  padding: 20px 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 760px) {
   .todoFiltre {
     flex-direction: row;
     justify-content: center;
+  }
+  .todo_background {
+    margin-bottom: 80px;
   }
 }/*# sourceMappingURL=home.css.map */

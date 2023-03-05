@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 ////rfce
 
 import { Link } from 'react-router-dom';
+import { FaTasks ,FaCheck, FaRegCircle } from 'react-icons/fa';
 
 import Todo from './Todo';
 import AddTodo from './AddTodo';
@@ -73,11 +74,12 @@ function Home() {
             <AddTodo />
             
           </div>
-
+          <div className='divTodoContainer'>
+            <h1 className='tachesH1'>Mes tâches</h1>
           <div className='todoFiltre'>
-              <button className='filtre' onClick={() => setFilter('all')}>Toutes</button>
-              <button className='filtre' onClick={() => setFilter('completed')}>Terminées</button>
-              <button className='filtre' onClick={() => setFilter('uncompleted')}>Non terminées</button>
+              <button className='filtre' onClick={() => setFilter('all')}><FaTasks/></button>
+              <button className='filtre' onClick={() => setFilter('completed')}><FaCheck/></button>
+              <button className='filtre' onClick={() => setFilter('uncompleted')}><FaRegCircle/></button>
             </div>
 
         <div className='todo_container'>
@@ -93,9 +95,12 @@ function Home() {
            ))}
           </div>
         </div>
+
+        </div>
+
         <div className='buttonSection'>
         <Link to="/conclusion">
-      <button className='buttonIntro' >Continuer</button>
+      <button className='buttonApp'>Continuer</button>
        </Link>
       </div>
         </div>
