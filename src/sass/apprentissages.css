@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: stretch;
   width: 100%;
 }
 
@@ -40,6 +41,11 @@
   color: black;
 }
 
+.UlclassPourLi li {
+  text-align: start;
+  margin-bottom: 42px;
+}
+
 @media screen and (min-width: 560px) {
   .textBoxApprentissage1 {
     margin-right: auto;
@@ -51,7 +57,7 @@
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1580px) {
   .apprentissages {
     flex-direction: row;
     justify-content: space-evenly;
