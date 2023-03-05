@@ -1,26 +1,22 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-
-import Difficulte from './components/Difficulte';
-import Apprentissage from './components/Apprentissage';
-import Conclusion from './components/Conclusion';
-import Intro from './components/Intro';
+import Difficulte from "./components/Difficulte";
+import Apprentissage from "./components/Apprentissage";
+import Conclusion from "./components/Conclusion";
+import Intro from "./components/Intro";
 //import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 //import handleSubmit from './handles/handlesubmit';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  
   return (
     <Router>
       <div className="App">
@@ -34,12 +30,12 @@ function App() {
             <Route path="/conclusion" element={<Conclusion />} />
           </Routes>
         </div>
-        <div className='footer'>
+        <div className="footer">
           <Footer />
         </div>
       </div>
     </Router>
   );
-};
+}
 
 export default App;

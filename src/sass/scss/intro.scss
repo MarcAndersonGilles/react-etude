@@ -1,80 +1,75 @@
-.intro{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-image: url(/assets/img/purpleBuble.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 360px;
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(/assets/img/purpleBuble.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 360px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+.introPresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.introSectionImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.introImagesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 30px;
+  gap: 10px;
 }
-h2{
-    margin-bottom: 20px;
-}
-.introPresentation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.introSectionImages{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.introImagesGrid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 30px;
-    gap: 10px;
-}
-.imgIntro{
-        width: 20vh;
-        min-height: 20vh;
-        
+.imgIntro {
+  width: 20vh;
+  min-height: 20vh;
 }
 ////boutons
-.buttonIntro{
-    width: 100%;
-    padding: 20px 80px;
-    margin-bottom: 50px;
+.buttonIntro {
+  width: 100%;
+  padding: 20px 80px;
+  margin-bottom: 50px;
 }
-.buttonSection{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+.buttonSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-@media screen and (min-width:560px) {
-    .intro{
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .imgIntro{
-        width: 20vh;
-        min-height: 20vh;
-        
-    }
-    .introImagesGrid{
+@media screen and (min-width: 560px) {
+  .intro {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .imgIntro {
+    width: 20vh;
+    min-height: 20vh;
+  }
+  .introImagesGrid {
     grid-template-columns: repeat(2, 1fr);
-  
-    }
-    .introSectionImages{
+  }
+  .introSectionImages {
     flex-direction: column;
     margin-bottom: 40px;
-    }
+  }
 }
-@media screen and (min-width:760px) {
-    .introImagesGrid{
+@media screen and (min-width: 760px) {
+  .introImagesGrid {
     grid-template-columns: repeat(3, 1fr);
-    }
+  }
 }

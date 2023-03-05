@@ -1,75 +1,73 @@
-.apprentissages{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch; 
-    width: 100%;
-    
-    
-    // background-image: url(/assets/img/backgroundApprentissage.png);
-   
+.apprentissages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+  width: 100%;
+
+  // background-image: url(/assets/img/backgroundApprentissage.png);
 }
-.apprentissagesSections{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url(/assets/img/purpleBuble.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 360px;
+.apprentissagesSections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(/assets/img/purpleBuble.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 360px;
 }
 
-.textBoxApprentissage1, .textBoxApprentissage2,.textBoxApprentissage3 {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    padding: 30px;
-    margin:30px;
-    background-color: white;
-    border: solid 5px black;
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.textBoxApprentissage1,
+.textBoxApprentissage2,
+.textBoxApprentissage3 {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 30px;
+  margin: 30px;
+  background-color: white;
+  border: solid 5px black;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.imgApprentissage{
-    width: 36vh;
-    min-height: 20vh;
-    
-}
-
-.apprentissages p{
-    color: black;
-}
-.UlclassPourLi li{
-    text-align: start;
-    margin-bottom: 42px;
+.imgApprentissage {
+  width: 36vh;
+  min-height: 20vh;
 }
 
-
-@media screen and (min-width:560px) {
-    .textBoxApprentissage1{
-        margin-right: auto;
-    }
-    .textBoxApprentissage2{
-        margin-left: auto;
-    }
-    .textBoxApprentissage3{
-        margin-right: auto;
-    }
+.apprentissages p {
+  color: black;
 }
-@media screen and (min-width:1580px) {
-    .apprentissages{
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
-    .textBoxApprentissage1,.textBoxApprentissage2,.textBoxApprentissage3{
-        margin:0;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    
+.UlclassPourLi li {
+  text-align: start;
+  margin-bottom: 42px;
+}
+
+@media screen and (min-width: 560px) {
+  .textBoxApprentissage1 {
+    margin-right: auto;
+  }
+  .textBoxApprentissage2 {
+    margin-left: auto;
+  }
+  .textBoxApprentissage3 {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1580px) {
+  .apprentissages {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .textBoxApprentissage1,
+  .textBoxApprentissage2,
+  .textBoxApprentissage3 {
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }

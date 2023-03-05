@@ -31,7 +31,8 @@
   font-size: 3em;
 }
 
-.todo input[type=text], .todo textarea[type=text] {
+.todo input[type=text],
+.todo textarea[type=text] {
   width: 60%;
   padding: 10px;
   border: 1px solid lightgray;
@@ -48,7 +49,8 @@
   color: black;
 }
 
-.input_container input[type=text], .input_container textarea[type=text] {
+.input_container input[type=text],
+.input_container textarea[type=text] {
   padding: 10px;
   border: 1px solid lightgray;
   border-radius: 5px;
@@ -64,17 +66,20 @@
   color: white;
 }
 
-input[type=text]::-webkit-input-placeholder, textarea[type=text]::-webkit-input-placeholder {
+input[type=text]::-webkit-input-placeholder,
+textarea[type=text]::-webkit-input-placeholder {
   font-style: italic;
   color: lightgray;
 }
 
-input[type=text]::-moz-placeholder, textarea[type=text]::-moz-placeholder {
+input[type=text]::-moz-placeholder,
+textarea[type=text]::-moz-placeholder {
   font-style: italic;
   color: lightgray;
 }
 
-input[type=text]::-ms-input-placeholder, textarea[type=text]::-ms-input-placeholder {
+input[type=text]::-ms-input-placeholder,
+textarea[type=text]::-ms-input-placeholder {
   font-style: italic;
   color: lightgray;
 }

@@ -1,75 +1,79 @@
-.difficulte{
-    display: flex;
+.difficulte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(/assets/img/purpleBuble.jpg);
+  // background-image: url(/assets/img/backgroundApprentissage.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 360px;
+}
+
+.textBoxDifficulte1,
+.textBoxDifficulte2,
+.textBoxDifficulte3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 901px;
+  padding: 30px;
+  margin: 30px;
+  background-color: white;
+  border: solid 5px black;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.imgDifficulte {
+  margin-left: 0;
+  border-radius: 0.5em;
+  border: solid;
+  max-width: 72vh;
+  max-height: 43vh;
+}
+.difficulte p {
+  color: black;
+}
+
+@media screen and (min-width: 560px) {
+  .textBoxDifficulte1 {
+    margin-left: auto;
+  }
+  .textBoxDifficulte2 {
+    margin-right: auto;
+  }
+  .textBoxDifficulte3 {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .imgDifficulte {
+    max-width: 20vh;
+    max-height: 26vh;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .textBoxDifficulte1,
+  .textBoxDifficulte2,
+  .textBoxDifficulte3 {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url(/assets/img/purpleBuble.jpg);
-    // background-image: url(/assets/img/backgroundApprentissage.png);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 360px;
+  }
 }
-
-.textBoxDifficulte1, .textBoxDifficulte2,.textBoxDifficulte3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 901px;
-    padding: 30px;
-    margin:30px;
-    background-color: white;
-    border: solid 5px black;
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-.imgDifficulte{
-    margin-left: 0;
-    border-radius: 0.5em;
-    border: solid;
-    max-width: 72vh;
-    max-height: 43vh;
-    
-}
-.difficulte p{
-    color: black;
-}
-
-
-@media screen and (min-width:560px) {
-    .textBoxDifficulte1{
-        margin-left: auto;
-    }
-    .textBoxDifficulte2{
-        margin-right: auto;
-    }
-    .textBoxDifficulte3{
-        margin-left: auto;
-    }
-}
-@media screen and (max-width:760px) {
-    .imgDifficulte {
-        max-width: 20vh;
-        max-height: 26vh;
-    }
-}
-@media screen and (max-width:1079px) {
-    .textBoxDifficulte1, .textBoxDifficulte2,.textBoxDifficulte3 {
-        flex-direction: column;
-    }
-}
-@media screen and (min-width:1080px) {
-    .difficulte{
-        flex-direction: column;
-        justify-content: space-evenly; 
-    }
-    .textBoxDifficulte1,.textBoxDifficulte2,.textBoxDifficulte3{
-        margin:0;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    .imgDifficulte{
-        margin-left: 30px; 
-    }
+@media screen and (min-width: 1080px) {
+  .difficulte {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .textBoxDifficulte1,
+  .textBoxDifficulte2,
+  .textBoxDifficulte3 {
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .imgDifficulte {
+    margin-left: 30px;
+  }
 }
