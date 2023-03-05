@@ -13,19 +13,15 @@ function Difficulte() {
       <div className="textBoxDifficulte1">
         <ul className="UlclassPourLi">
           <li>
-            Difficulté : Il peut être difficile de savoir par où commencer,
-            surtout si vous êtes nouveau dans le développement d'applications.
-            Vous pouvez vous sentir submergé par la quantité d'informations et
-            de ressources disponibles, et vous pouvez ne pas savoir comment
-            organiser votre temps ou vos priorités.
+            Difficulté : Ne pas savoir par où commencer, surtout si c'Est la
+            première fois qu'on fait une application. On peut être submergé par
+            la quantité d'informations et de ressources disponibles.
           </li>
           <li>
-            Solution : Établir un plan d'action clair pour votre projet, en
+            Solution : Établir un plan d'action clair pour le projet, en
             identifiant les tâches les plus importantes à accomplir en premier.
             Vous pouvez également vous fixer des objectifs à court terme pour
-            vous aider à progresser régulièrement. Enfin, vous pouvez chercher
-            des ressources en ligne pour vous aider à apprendre les compétences
-            dont vous avez besoin pour votre projet.
+            vous aider à progresser régulièrement.
           </li>
         </ul>
         <div>
@@ -37,19 +33,15 @@ function Difficulte() {
         <ul className="UlclassPourLi">
           <li>
             Difficulté : Le déploiement sur GitHub peut également être
-            difficile, surtout si vous n'êtes pas familier avec la plateforme.
-            Vous pouvez rencontrer des difficultés pour configurer votre
-            environnement de développement, pour intégrer correctement vos
-            fichiers de code source avec GitHub, pour mettre à jour votre code
-            et pour déployer votre application sur GitHub Pages.
+            difficile, si c'est la première fois qu'on le fait. On peut
+            rencontrer des difficultés pour configurer l'environnement de
+            développement.
           </li>
           <li>
             {" "}
-            Solution : Vous pouvez suivre des tutoriels étape par étape pour
-            configurer votre environnement de développement et pour déployer
-            votre application sur GitHub Pages. Vous pouvez également chercher
-            de l'aide sur des forums de développeurs ou sur des sites
-            communautaires pour obtenir des conseils et des astuces.
+            Solution : Suivre des tutoriels étape par étape pour configurer
+            l'environnement de développement et pour déployer l'application sur
+            GitHub Pages.
           </li>
         </ul>
         <div>

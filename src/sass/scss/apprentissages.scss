@@ -57,6 +57,9 @@
   .textBoxApprentissage3 {
     margin-right: auto;
   }
+  .UlclassPourLi li {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1580px) {
   .apprentissages {
@@ -69,5 +72,8 @@
     margin: 0;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .UlclassPourLi li {
+    font-size: 25px;
   }
 }

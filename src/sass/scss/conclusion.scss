@@ -24,8 +24,16 @@
   border-radius: 0.5em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+.UlclassPourLiConclusion {
+  margin-bottom: 30px;
+}
+.UlclassPourLiConclusion li {
+  margin-bottom: 42px;
+  text-align: start;
+}
+
 .imgConclusion {
-  width: 36vh;
+  width: 100%;
   min-height: 20vh;
 }
 .conclusion p {
@@ -34,6 +42,9 @@
 
 @media screen and (min-width: 560px) {
   .textBoxConclusion1 {
+  }
+  .UlclassPourLiConclusion li {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 760px) {
@@ -47,8 +58,17 @@
     flex-direction: row;
   }
   .textBoxConclusion1 {
+    max-width: 1000px;
     margin: 0;
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+  .UlclassPourLiConclusion {
+    display: flex;
+    flex-direction: column;
+  }
+  .UlclassPourLiConclusion li {
+    font-size: 25px;
+    margin-bottom: 42px;
   }
 }
