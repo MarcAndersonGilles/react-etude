@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 
 import "../sass/scss/navbar.scss";
 
+import tim from '../assets/img/LogoTIM.png';
+
 
 import { Link } from 'react-router-dom';
 
@@ -47,6 +49,10 @@ function Navbar() {
           <li className="navbar__item">
             <Link to="/conclusion" className="navbar__link" onClick={handleLinkClick}>Conclusion</Link>
           </li> 
+          
+          <div className='navbarLogo'>
+            <img className='imgNavbar' src={tim} alt="test2"/>
+            </div>
           
         </ul>
 

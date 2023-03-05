@@ -58,6 +58,17 @@ a {
   background-color: white;
 }
 
+.navbarLogo {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.imgNavbar {
+  max-height: 43px;
+  margin-right: 50px;
+}
+
 @media (max-width: 760px) {
   .hamburger-lines {
     display: block;
