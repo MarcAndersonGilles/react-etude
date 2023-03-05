@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 
 import "../sass/scss/navbar.scss";
 
-import tim from '../assets/img/LogoTIM.png';
+import tim from '../assets/img/logoTIM.png';
 
 
 import { Link } from 'react-router-dom';
