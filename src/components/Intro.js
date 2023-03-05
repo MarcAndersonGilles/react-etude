@@ -25,12 +25,14 @@ function Intro() {
       <div className='introSectionImages'>
 
       <div className='introImagesGrid'>
-        <div><img className='imgIntro' src={javascript} alt="test2"/></div>
+        
         <div><img className='imgIntro' src={react} alt="test2"/></div>
-        <div><img className='imgIntro' src={node} alt="test2"/></div>
         <div><img className='imgIntro' src={html} alt="test2"/></div>
-        <div><img className='imgIntro' src={firebase} alt="test2"/></div>
+        <div><img className='imgIntro' src={node} alt="test2"/></div>
         <div><img className='imgIntro' src={css} alt="test2"/></div>
+        <div><img className='imgIntro' src={javascript} alt="test2"/></div>
+        <div><img className='imgIntro' src={firebase} alt="test2"/></div>
+        
       </div>
       <div className='buttonSection'>
         <Link to="/apprentissages">

@@ -31,10 +31,6 @@
   font-size: 3em;
 }
 
-.formeTodo {
-  background-color: #d326fe;
-}
-
 .todo input[type=text], .todo textarea[type=text] {
   width: 60%;
   padding: 10px;

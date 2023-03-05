@@ -1,7 +1,7 @@
 import React from 'react'
 import "../sass/scss/conclusion.scss";
 
-import reactJSapprentissage from '../assets/img/reactJSapprentissage.png';
+import conclusion from '../assets/img/conclusion.jpg';
 
 function Conclusion() {
   return (
@@ -12,7 +12,7 @@ function Conclusion() {
           when an unknown printer took a galley of type and scrambled it to make a type specimen book.
            It has survived not only five centuries, but also the leap into electronic typesetting, remaining
             essentially unchanged.</p>
-            <div><img className='imgIntro' src={reactJSapprentissage} alt="test2"/></div>
+            <div><img className='imgConclusion' src={conclusion} alt="test2"/></div>
         </div>
         </div>
   )
