@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-etude/static/css/main.0e5176f9.css",
-    "main.js": "/react-etude/static/js/main.1d78737e.js",
+    "main.js": "/react-etude/static/js/main.bae19ac1.js",
     "static/js/787.c660bb4e.chunk.js": "/react-etude/static/js/787.c660bb4e.chunk.js",
     "static/media/reactJSapprentissage.png": "/react-etude/static/media/reactJSapprentissage.81ed438b18e24116794d.png",
     "static/media/design.png": "/react-etude/static/media/design.0d9f5150cdd372c8a187.png",
@@ -18,11 +18,11 @@
     "static/media/backgroundForm.jpg": "/react-etude/static/media/backgroundForm.8a8a80bb828da29a1525.jpg",
     "index.html": "/react-etude/index.html",
     "main.0e5176f9.css.map": "/react-etude/static/css/main.0e5176f9.css.map",
-    "main.1d78737e.js.map": "/react-etude/static/js/main.1d78737e.js.map",
+    "main.bae19ac1.js.map": "/react-etude/static/js/main.bae19ac1.js.map",
     "787.c660bb4e.chunk.js.map": "/react-etude/static/js/787.c660bb4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e5176f9.css",
-    "static/js/main.1d78737e.js"
+    "static/js/main.bae19ac1.js"
   ]
 }
