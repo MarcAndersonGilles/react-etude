@@ -1,4 +1,5 @@
 {
+  
   "functions": [
     {
       "source": "functions",
@@ -19,7 +20,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
